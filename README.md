@@ -1,6 +1,6 @@
-# reciclapp
+# Bienvenidos a ReciclAPP
 
-A new Flutter project.
+Este proyecto presenta el desarrollo de una aplicación móvil gamificada, donde se busca promover el reciclaje y la sostenibilidad. La aplicación permitirá a los usuarios poder registrarse, ver un mapa con los puntos cercanos de reciclaje, escanear un código QR en esos puntos para validar que reciclaron, los usuarios ganan puntos por cada acción de reciclaje y se podrán canjear recompensas o descuentos en comercios asociados. La propuesta integra tecnologías modernas como Flutter, Firebase y Google Maps API.
 
 ## Getting Started
 
