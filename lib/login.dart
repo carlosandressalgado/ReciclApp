@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
+import 'crear_cuenta.dart';
+import 'inicio.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
-
-  // 🔹 Método para no repetir estilos en los TextField
+@override
+  State<LoginPage> createState() => _LoginPageState();
+}
+class _LoginPageState extends State<LoginPage> {
+  //  Método para no repetir estilos en los TextField
   InputDecoration buildInputDecoration(String label, IconData icon) {
     return InputDecoration(
       labelText: label,
       prefixIcon: Icon(icon, color: Colors.grey), // ícono gris
       labelStyle: const TextStyle(color: Colors.grey), // texto en gris
       floatingLabelStyle: const TextStyle(
-        color: Colors.grey, // también gris cuando está enfocado
+        color: Colors.grey, // gris cuando está enfocado
         fontWeight: FontWeight.bold,
       ),
       enabledBorder: OutlineInputBorder(
@@ -19,7 +24,7 @@ class LoginPage extends StatelessWidget {
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(15),
-        borderSide: const BorderSide(color: Colors.grey, width: 2), // ✅ gris al enfocar
+        borderSide: const BorderSide(color: Colors.grey, width: 2), // gris al enfocar
       ),
     );
   }
@@ -27,7 +32,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green.shade100, // fondo agradable
+      backgroundColor: const Color.fromARGB(255, 185, 226, 187), 
       body: Center(
         child: SingleChildScrollView(
           child: Padding(
@@ -35,12 +40,13 @@ class LoginPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Texto Crear Cuenta arriba derecha
                 Align(
                   alignment: Alignment.topRight,
                   child: TextButton(
                     onPressed: () {
-                      // Aquí luego puedes navegar a una pantalla de registro
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const CrearCuentaPage()),
+                      );
                     },
                     child: const Text(
                       "Crear cuenta",
@@ -83,10 +89,13 @@ class LoginPage extends StatelessWidget {
                         height: 50,
                         child: ElevatedButton(
                           onPressed: () {
-                            // Aquí luego puedes validar el login
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(builder: (context) => const InicioPage()),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white, // fondo blanco
+                            backgroundColor: Colors.grey[300], 
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15),
                             ),
@@ -94,7 +103,6 @@ class LoginPage extends StatelessWidget {
                               color: Colors.grey, // borde gris
                               width: 2,
                             ),
-                            overlayColor: Colors.grey.shade300, // ✅ splash gris
                           ),
                           child: const Text(
                             "Ingresar",
