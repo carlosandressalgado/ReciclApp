@@ -3,6 +3,25 @@ import 'package:flutter/material.dart';
 class CrearCuentaPage extends StatelessWidget {
   const CrearCuentaPage({super.key});
 
+  InputDecoration buildInputDecoration(String label, IconData icon) {
+    return InputDecoration(
+      labelText: label,
+      prefixIcon: Icon(icon, color: Colors.grey),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(15),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(15),
+        borderSide: const BorderSide(color: Colors.grey, width: 2),
+      ),
+      floatingLabelStyle: const TextStyle(
+        color: Colors.grey, // 👈 ahora siempre gris
+        fontWeight: FontWeight.bold,
+      ),
+      labelStyle: const TextStyle(color: Colors.grey), // inicial en gris
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,61 +55,21 @@ class CrearCuentaPage extends StatelessWidget {
               child: Column(
                 children: [
                   TextField(
-                    decoration: InputDecoration(
-                      labelText: "Nombre de usuario",
-                      prefixIcon: const Icon(Icons.person),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(15),
-                        borderSide: const BorderSide(color: Colors.grey, width: 2),
-                      ),
-                    ),
+                    decoration: buildInputDecoration("Nombre de usuario", Icons.person),
                   ),
                   const SizedBox(height: 20),
                   TextField(
-                    decoration: InputDecoration(
-                      labelText: "Correo electrónico",
-                      prefixIcon: const Icon(Icons.email),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(15),
-                        borderSide: BorderSide(color: Colors.grey, width: 2),
-                      ),
-                    ),
+                    decoration: buildInputDecoration("Correo electrónico", Icons.email),
                   ),
                   const SizedBox(height: 20),
                   TextField(
                     obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: "Contraseña",
-                      prefixIcon: const Icon(Icons.lock),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(15),
-                        borderSide: BorderSide(color: Colors.grey, width: 2),
-                      ),
-                    ),
+                    decoration: buildInputDecoration("Contraseña", Icons.lock),
                   ),
                   const SizedBox(height: 20),
                   TextField(
                     obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: "Confirmar contraseña",
-                      prefixIcon: const Icon(Icons.lock_outline),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(15),
-                        borderSide: BorderSide(color: Colors.grey, width: 2),
-                      ),
-                    ),
+                    decoration: buildInputDecoration("Confirmar contraseña", Icons.lock_outline),
                   ),
                   const SizedBox(height: 30),
                   SizedBox(
@@ -115,16 +94,7 @@ class CrearCuentaPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 15),
-                  TextButton(
-                    onPressed: () {
-                      Navigator.pop(context); // vuelve al login
-                    },
-                    child: const Text(
-                      "¿Ya tienes cuenta? Inicia sesión",
-                      style: TextStyle(color: Colors.green),
-                    ),
-                  ),
+                  const SizedBox(height: 15),  
                 ],
               ),
             ),

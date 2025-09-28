@@ -91,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                           onPressed: () {
                             Navigator.pushReplacement(
                               context,
-                              MaterialPageRoute(builder: (context) => const InicioPage()),
+                              MaterialPageRoute(builder: (context) => const Inicio()),
                             );
                           },
                           style: ElevatedButton.styleFrom(

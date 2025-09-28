@@ -13,8 +13,6 @@ class _VentanaDeCargaState extends State<VentanaDeCarga> {
   @override
   void initState() {
     super.initState();
-
-    // Después de 3 seg navega al login
     Timer(const Duration(seconds: 2), () {
       Navigator.pushReplacement(
         context,
