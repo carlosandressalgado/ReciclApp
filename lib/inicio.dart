@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'perfil.dart';
-import 'qr_scanner_page.dart'; // la pantalla del QR
+//import 'qr_scanner_page.dart'; // la pantalla del QR
 
 class Inicio extends StatefulWidget {
   const Inicio({super.key});
@@ -36,10 +36,10 @@ class _InicioState extends State<Inicio> {
           const SizedBox(height: 20),
           ElevatedButton.icon(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => const QrScannerPage()),
-              );
+              //Navigator.push(
+              //  context,
+              //  MaterialPageRoute(builder: (_) => const QrScannerPage()),
+              //);
             },
             icon: const Icon(Icons.qr_code_scanner),
             label: const Text("Escanear QR"),
