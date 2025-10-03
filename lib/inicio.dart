@@ -44,7 +44,7 @@ class _InicioState extends State<Inicio> {
             icon: const Icon(Icons.qr_code_scanner),
             label: const Text("Escanear QR"),
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.green,
+              backgroundColor: const Color(0xFF4CAF50),
               foregroundColor: Colors.white,
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
               textStyle: const TextStyle(fontSize: 18),
