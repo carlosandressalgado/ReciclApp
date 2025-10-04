@@ -23,38 +23,6 @@ Frontend/App Móvil	Flutter (Dart)	Desarrollo multiplataforma para iOS y Android
 Backend/Datos	Firebase	Utilizado para Autenticación (Auth), la base de datos NoSQL (Firestore) y la lógica del negocio en la nube (Cloud Functions).
 Mapas y QR	Google Maps API	Integración del mapa interactivo y la geolocalización.
 
-Exportar a Hojas de cálculo
-💻 Guía de Instalación y Ejecución Local
-Sigue estos pasos para clonar el repositorio y ejecutar RecyclApp en tu entorno de desarrollo local (se requiere tener Flutter SDK y Git instalados).
-
-1. Requisitos Previos
-Flutter SDK: Versión estable.
-
-Git: Para clonar el repositorio.
-
-Editor de Código: Recomendado Visual Studio Code o Android Studio.
-
-Configuración de Firebase: Para una ejecución completa, deberás conectar tu propia instancia de Firebase y añadir los archivos de configuración (google-services.json para Android o GoogleService-Info.plist para iOS) en las carpetas correspondientes.
-
-2. Clonar el Repositorio
-Abre tu terminal o consola y ejecuta el siguiente comando:
-
-Bash
-
-git clone https://docs.github.com/es/repositories/creating-and-managing-repositories/quickstart-for-repositories
-cd recyclapp
-3. Instalar Dependencias
-Dentro del directorio del proyecto, descarga e instala todas las dependencias necesarias:
-
-Bash
-
-flutter pub get
-4. Ejecutar la Aplicación
-Asegúrate de que tienes un emulador de Android/iOS o un dispositivo físico conectado. Luego, inicia la aplicación:
-
-Bash
-
-flutter run
 ✨ Funcionalidades Clave del MVP (Producto Mínimo Viable)
 Autenticación de Usuarios: Registro y login de usuarios mediante Firebase Auth.
 
