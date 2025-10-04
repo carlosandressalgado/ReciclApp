@@ -23,7 +23,7 @@ Frontend/App Móvil	Flutter (Dart)	Desarrollo multiplataforma para iOS y Android
 Backend/Datos	Firebase	Utilizado para Autenticación (Auth), la base de datos NoSQL (Firestore) y la lógica del negocio en la nube (Cloud Functions).
 Mapas y QR	Google Maps API	Integración del mapa interactivo y la geolocalización.
 
-✨ Funcionalidades Clave del MVP (Producto Mínimo Viable)
+# ✨ Funcionalidades Clave del MVP (Producto Mínimo Viable)
 Autenticación de Usuarios: Registro y login de usuarios mediante Firebase Auth.
 
 Visualización de Mapas: Mapa interactivo con geolocalización y marcadores para los puntos de reciclaje.
