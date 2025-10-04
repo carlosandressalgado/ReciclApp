@@ -1,4 +1,4 @@
-# ♻️ RecyclApp: El Reciclaje es un Juego
+# ♻️ ReciclApp: El Reciclaje es un Juego
 👋 ¡Bienvenido a RecyclApp!
 RecyclApp es una aplicación móvil gamificada, inspirada en el modelo de Pokémon GO, que busca transformar el acto de reciclar en una experiencia divertida y gratificante. Nuestro objetivo principal es aumentar la participación ciudadana en el reciclaje, utilizando la tecnología para generar un impacto social, ambiental y económico positivo en comunidades como San Joaquín.
 
@@ -33,3 +33,9 @@ Validación de Reciclaje: Funcionalidad para escanear códigos QR.
 Sistema de Puntos: Lógica para la acumulación y gestión de puntos en Firestore.
 
 Canje de Recompensas: Pantalla dedicada para que los usuarios puedan canjear sus puntos por beneficios.
+
+# 🧑‍💻 Creadores de ReciclAPP ♻️♻️♻️
+### Joaquin Rojas
+### Carlos Salgado
+### Diego Martinez
+
