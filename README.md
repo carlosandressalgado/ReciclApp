@@ -15,7 +15,7 @@ Puntos y Ranking: Por cada acción, el usuario gana puntos que se acumulan en su
 
 Canje de Recompensas: Los puntos se canjean por descuentos o recompensas en comercios locales asociados.
 
-🛠️ Tecnologías Utilizadas
+# 🛠️ Tecnologías Utilizadas
 Este proyecto se construye sobre un stack tecnológico moderno y eficiente que asegura el desarrollo multiplataforma y un backend robusto:
 
 Componente	Tecnología	Propósito
