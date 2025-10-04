@@ -1,6 +1,6 @@
 # ♻️ ReciclApp: El Reciclaje es un Juego
-👋 ¡Bienvenido a RecyclApp!
-RecyclApp es una aplicación móvil gamificada, inspirada en el modelo de Pokémon GO, que busca transformar el acto de reciclar en una experiencia divertida y gratificante. Nuestro objetivo principal es aumentar la participación ciudadana en el reciclaje, utilizando la tecnología para generar un impacto social, ambiental y económico positivo en comunidades como San Joaquín.
+👋 ¡Bienvenido a ReciclApp!
+ReciclApp es una aplicación móvil gamificada, inspirada en el modelo de Pokémon GO, que busca transformar el acto de reciclar en una experiencia divertida y gratificante. Nuestro objetivo principal es aumentar la participación ciudadana en el reciclaje, utilizando la tecnología para generar un impacto social, ambiental y económico positivo en comunidades como San Joaquín - Santiago, Chile.
 
 El proyecto se enfoca en hacer que la sostenibilidad sea accesible y motivadora para todos.
 
